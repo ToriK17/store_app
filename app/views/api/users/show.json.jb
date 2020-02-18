@@ -1,0 +1,7 @@
+{
+  id: @user.id,
+  name: @user.name, 
+  email: @user.email,
+  recent_food: @recent_food,
+  average_cost: @average_cost
+}
