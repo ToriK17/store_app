@@ -8,7 +8,9 @@ class Api::UsersController < ApplicationController
 
     if params[:categories].present?
       @recent_food = @user.foods.where("LOWER(categories) LIKE LOWER(?)", "%#{params[:categories]}%").distinct
-    end   
+    end  
+
+         
 
     render "show.json.jb"
   end

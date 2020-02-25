@@ -2,7 +2,7 @@ namespace :food do
   desc 'populates food from api'
   task populate: :environment do 
     
-    products = Openfoodfacts::Product.search("Chocolate", locale: 'world', page_size: 1)
+    products = Openfoodfacts::Product.search("eggs", locale: 'world', page_size: 1)
 
   
     products.each do |product|
