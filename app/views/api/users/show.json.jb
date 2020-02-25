@@ -3,5 +3,6 @@
   name: @user.name, 
   email: @user.email,
   recent_food: @recent_food,
-  average_cost: @average_cost
+  average_cost: @average_cost,
+  egg_purchases: @egg_purchases
 }

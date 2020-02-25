@@ -10,7 +10,8 @@ class Api::UsersController < ApplicationController
       @recent_food = @user.foods.where("LOWER(categories) LIKE LOWER(?)", "%#{params[:categories]}%").distinct
     end  
 
-         
+
+    @egg_purchases = @user.foods.where("categories ILIKE ?", "%egg%")
 
     render "show.json.jb"
   end
